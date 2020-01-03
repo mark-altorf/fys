@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<fx:root prefHeight="530.0" prefWidth="850.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane id="borderPane" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../../styles/MissingReportMatching.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="imgTitle" fitHeight="100.0" fitWidth="850.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/title4.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <TableView fx:id="tableViewMatches" editable="true" prefHeight="200.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="registrationNr" editable="false" prefWidth="88.0" text="Registratie nr" />
+                <TableColumn fx:id="dateFound" editable="false" minWidth="0.0" prefWidth="88.0" text="Datum gevonden" />
+                  <TableColumn fx:id="timeFound" editable="false" minWidth="0.0" prefWidth="88.0" text="Tijdstip gevonden" />
+                  <TableColumn fx:id="luggageType" editable="false" minWidth="0.0" prefWidth="88.0" text="Bagage type" />
+                  <TableColumn fx:id="brand" editable="false" prefWidth="88.0" text="Merk" />
+                  <TableColumn fx:id="specialCharacteristics" editable="false" prefWidth="110.0" text="Speciale eigenschappen" />
+                  <TableColumn fx:id="weightInKG" editable="false" prefWidth="75.0" text=" Gewicht KG)" />
+                  <TableColumn fx:id="flightNr" editable="false" prefWidth="75.0" text="Vlucht nr" />
+                  <TableColumn fx:id="tagNr" editable="false" prefWidth="75.0" text="Tag nr" />
+                  <TableColumn fx:id="locationFound" editable="false" prefWidth="88.0" text="Locatie gevonden" />
+                  <TableColumn fx:id="mainColor" editable="false" prefWidth="88.0" text="Primaire kleur" />
+                  <TableColumn fx:id="secondColor" editable="false" prefWidth="100.0" text="Secondaire kleur" />
+                  <TableColumn fx:id="size" editable="false" prefWidth="75.0" text="Afmetingen" />
+                  <TableColumn fx:id="passengerName" editable="false" prefWidth="75.0" text="Passagiers naam" />
+                  <TableColumn fx:id="passengerCity" editable="false" prefWidth="75.0" text="Passagiers stad" />
+                  <TableColumn fx:id="airport" editable="false" prefWidth="100.0" text="Vliegveld gevonden" />
+              </columns>
+            </TableView>
+         </center>
+         <right>
+            <Pane prefHeight="477.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+         </right>
+         <left>
+            <Pane prefHeight="477.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+         </left>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="850.0">
+               <children>
+                  <CheckBox fx:id="checkBoxShowAll" mnemonicParsing="false" onAction="#checkBoxShowAll_Change" prefHeight="50.0" prefWidth="692.0" text="Toon alles" />
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#btnMatch_Click">
+                           <graphic>
+                              <FontIcon fill="#d81e05" iconLiteral="fa-handshake-o" iconSize="32" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</fx:root>

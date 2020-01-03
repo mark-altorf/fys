@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane id="AnchorPane" fx:id="mainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hva.fys.btracker.MainSceneController">
+   <children>
+      <BorderPane fx:id="mainPane" layoutX="90.0" layoutY="67.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="anchorContent" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </StackPane>
+         </center>
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="Home">
+                     <items>
+                    <MenuItem mnemonicParsing="false" onAction="#homePage_click" text="Gevonden bagage overzicht" />
+                      <MenuItem mnemonicParsing="false" onAction="#menuImportFoundLuggage_Click" text="Importeer bagage" />
+                        <MenuItem mnemonicParsing="false" onAction="#logout_Click" text="Logout" />
+                     </items></Menu>
+                <Menu mnemonicParsing="false" text="Vermissingen">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#menuMissingReportManagement_Click" text="Vermissingen beheer" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Statistieken">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#menuStatistics_Click" text="Statistieken overzicht" />
+                     </items></Menu>
+                  <Menu mnemonicParsing="false" text="Gebruikers">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#menuUserManagement_Click" text="Gebruikersbeheer" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

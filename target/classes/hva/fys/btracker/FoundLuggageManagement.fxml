@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<fx:root prefHeight="530.0" prefWidth="850.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane id="borderPane" layoutX="57.0" layoutY="80.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../../styles/FoundLuggageManagement.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <TableView fx:id="TableViewFoundLuggage" editable="true" prefHeight="320.0" prefWidth="606.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="registrationNr" editable="false" prefWidth="94.0" text="Registratie Nr" />
+                <TableColumn fx:id="dateFound" editable="false" prefWidth="56.0" text="Gevonden op" />
+                  <TableColumn fx:id="luggageType" editable="false" prefWidth="75.0" text="Type" />
+                  <TableColumn fx:id="flightNr" editable="false" prefWidth="75.0" text="Vlucht Nr" />
+                  <TableColumn fx:id="tagNr" editable="false" prefWidth="75.0" text="Tag Nr" />
+                  <TableColumn fx:id="passengerName" editable="false" prefWidth="75.0" text="Reiziger naam" />
+                  <TableColumn fx:id="airport" editable="false" prefWidth="75.0" text="Vliegveld" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </center>
+         <bottom>
+            <Pane prefHeight="50.0" prefWidth="700.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <left>
+            <Pane prefHeight="382.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Pane prefHeight="382.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+         </right>
+         <top>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="850.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/title1.png" />
+                     </image>
+                  </ImageView>
+               </children></HBox>
+         </top>
+      </BorderPane>
+   </children>
+</fx:root>

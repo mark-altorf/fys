@@ -1,0 +1,12 @@
+.button {
+    -fx-font-weight: bold;
+    
+}
+.label {
+    -fx-font-weight: bold;
+}
+
+#borderPane{
+    -fx-background-image: url("../images/background2.png");
+    -fx-background-size: stretch;
+}

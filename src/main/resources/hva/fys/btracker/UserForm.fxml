@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root prefHeight="530.0" prefWidth="850.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane id="borderPane" prefHeight="500.0" prefWidth="700.0" stylesheets="@../../../styles/UserForm.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox alignment="CENTER">
+               <children>
+                  <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="700.0" text="Gebruikersnaam" />
+                  <TextField fx:id="txtUsername" maxWidth="200.0" minWidth="100.0">
+                     <VBox.margin>
+                        <Insets left="250.0" right="250.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label alignment="BOTTOM_CENTER" prefHeight="25.0" prefWidth="700.0" text="Wachtwoord" />
+                  <PasswordField fx:id="txtPasswordCheck" maxWidth="200.0" minWidth="100.0">
+                     <VBox.margin>
+                        <Insets left="250.0" right="250.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="700.0" text="Herhaal wachtwoord" textAlignment="CENTER" />
+                  <PasswordField fx:id="txtPassword" maxWidth="200.0" minWidth="100.0">
+                     <VBox.margin>
+                        <Insets bottom="25.0" left="250.0" right="250.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <GridPane alignment="CENTER" prefHeight="30.0" prefWidth="307.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="btnCreateUser" alignment="CENTER" maxWidth="200.0" minWidth="100.0" mnemonicParsing="false" onAction="#btnCreateUser" prefHeight="25.0" prefWidth="200.0" text="Aanmaken" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="25.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxWidth="200.0" minWidth="100.0" mnemonicParsing="false" onAction="#btnCancel_Click" prefHeight="25.0" prefWidth="350.0" text="Annuleren" textAlignment="CENTER">
+                           <GridPane.margin>
+                              <Insets left="125.0" right="25.0" />
+                           </GridPane.margin>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <Pane prefHeight="50.0" prefWidth="850.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <left>
+            <Pane prefHeight="380.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Pane prefHeight="380.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+         </right>
+         <top>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="850.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/title7.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</fx:root>

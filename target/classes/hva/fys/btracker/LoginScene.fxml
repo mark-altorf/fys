@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="850.0" stylesheets="@../../../styles/LoginScene.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hva.fys.btracker.LoginSceneController">
+   <children>
+      <BorderPane id="borderPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../styles/LoginScene.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox alignment="CENTER">
+               <children>
+                  <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="600.0" text="Username" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets left="200.0" right="200.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtUsername" maxWidth="200.0" prefHeight="25.0" prefWidth="173.0">
+                     <VBox.margin>
+                        <Insets left="200.0" right="200.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label alignment="BOTTOM_CENTER" prefHeight="30.0" prefWidth="600.0" text="Password" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets left="200.0" right="200.0" />
+                     </VBox.margin>
+                  </Label>
+                  <PasswordField fx:id="txtPassword" maxWidth="200.0" prefHeight="25.0" prefWidth="337.0">
+                     <VBox.margin>
+                        <Insets left="200.0" right="200.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <Button contentDisplay="CENTER" maxWidth="200.0" mnemonicParsing="false" onAction="#btnLoginClickAction" prefHeight="25.0" prefWidth="600.0" text="Login" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets left="200.0" right="200.0" top="30.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <Pane prefHeight="50.0" prefWidth="850.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <top>
+            <HBox id="hbox" alignment="CENTER" prefHeight="100.0" prefWidth="850.0" stylesheets="@../../../styles/LoginScene.css" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="59.0" fitWidth="411.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/logo75%25.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </top>
+         <right>
+            <Pane prefHeight="309.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+         </right>
+         <left>
+            <Pane prefHeight="309.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

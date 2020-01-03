@@ -1,0 +1,15 @@
+hva\fys\btracker\MainSceneController.class
+hva\fys\btracker\MainApp.class
+hva\fys\btracker\Models\MissingReport.class
+hva\fys\btracker\StatisticsController.class
+hva\fys\btracker\LoginSceneController.class
+hva\fys\btracker\MissingReportManagementController.class
+hva\fys\btracker\FoundLuggageManagementController.class
+hva\fys\btracker\MissingReportFormController.class
+hva\fys\btracker\UserFormController.class
+hva\fys\btracker\MissingReportMatchingController.class
+hva\fys\btracker\database\DatabaseManager.class
+hva\fys\btracker\GeneralConfig.class
+hva\fys\btracker\Models\User.class
+hva\fys\btracker\UserManagementController.class
+hva\fys\btracker\Models\FoundLuggage.class
